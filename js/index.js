@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   function search() {
     var query = $('#searchTerm').val();
-    var url = 'http://en.wikipedia.org/w/api.php?action=opensearch&format=json&callback=?&search=' + query;
+    var url = 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&callback=?&search=' + query;
     $('ul').empty();
     $.getJSON(url, function(data) {
       for (var i = 0; i < data[3].length; i++) {
