@@ -1,0 +1,115 @@
+body {
+  font-family: verdana;
+  background: url("http://www.ataflancer.com/wikipedia.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#searchBar.sticky {
+  position: fixed;
+  top: 0;
+}
+
+
+.searchField {
+  margin: 20px;
+}
+
+#results-container {
+
+}
+
+#results {
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+input {
+	outline: none;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 3px 9px 32px;
+  width: 100px;
+
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+	transition: all 1s;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: block;
+}
+
+/* When search field in focus, change width */
+input[type=search]:focus {
+  width: 250px;
+  background-color: #fff;
+  border-color: #66cc75;
+  position: relative;
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+li {
+  list-style: none;
+  background: #927bbf;
+  color: #fff;
+  height: 0;
+  line-height: 2em;
+  margin: 0;
+  padding: 0 0.5em;
+  overflow: hidden;
+  width: 97%;
+}
+
+li:hover {
+  background-color: #bbadd7;
+}
+
+li.show {
+  height: 6em;
+  margin: 2px 0;
+}
+
+.slide-fade li {
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+
+.slide-fade li.show {
+  opacity: 0.9;
+}

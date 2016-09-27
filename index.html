@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Wikipedia Viewer</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div id="searchBar" class="row">
+    <div class="searchField">
+      <h1>wikipedia search:</h1>
+
+      <form id="search">
+        <input id="searchTerm" class="fa fa-search" type="search" placeholder="Search..." />
+      </form>
+      <h4><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" style="color: black;">I want a random article!</a></h4>
+    </div>
+  </div>
+  <div id="results-container" class="row">
+    <div id="results" class="slide-fade">
+      <ul id="list"></ul>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <script src="./js/index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
